@@ -1,0 +1,376 @@
+:root {
+  --primary: rgb(226, 222, 215);
+  --secondary: rgb(100, 31, 31);
+  --tertiary: rgb(240, 225, 197);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+h1,
+h3 {
+  font-size: 300%;
+  font-weight: 500;
+}
+h2 {
+  font-size: 180%;
+}
+
+h4 {
+  font-size: 150%;
+}
+
+h5 {
+  font-size: 110%;
+}
+
+p {
+  font-size: 130%;
+}
+body {
+  background-color: var(--primary);
+  background-image: url(./assets/coffee_and_books.jpg);
+  background-position: center;
+  background-size: contain;
+}
+
+/************HEADER*****************/
+header {
+  height: 70vh;
+  width: 100%;
+  color: white;
+}
+
+.heading {
+  width: 90%;
+  height: 90%;
+  background-image: url(./assets/rotate.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 5% 6%;
+  box-shadow: 4px 4px 7px 7px rgba(0, 0, 0, 0.007);
+}
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 30%;
+  width: 90%;
+}
+.logo img {
+  height: 200px;
+  width: 200px;
+}
+
+.navBar {
+  display: flex;
+}
+
+.navBar ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.navBar ul li {
+  list-style: none;
+}
+
+.navBar ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 150%;
+  transition: 0.5s;
+}
+
+.navBar ul li a:hover {
+  background-color: var(--secondary);
+  padding: 15px 17px;
+  border-radius: 25px;
+}
+
+input {
+  padding: 5% 20%;
+  border-radius: 50px;
+  background: white;
+  border: none;
+  outline: none;
+  font-size: 130%;
+  font-weight: bold;
+}
+
+.headerBody {
+  padding: 4.5% 8%;
+  line-height: 40px;
+}
+
+.order {
+  padding: 15px 25px;
+  background-color: white;
+  color: black;
+  border-radius: 25px;
+  outline: none;
+  border: none;
+  font-size: 100%;
+  margin: 15px 0;
+  transition: 1s;
+}
+
+.order:hover {
+  background-color: var(--secondary);
+  color: white;
+}
+
+/************SECTION*****************/
+section {
+  min-height: 150vh;
+  width: 100%;
+}
+
+.coffee_product {
+  width: 90%;
+  height: 90%;
+  margin: 5% 6%;
+  background-color: var(--primary);
+}
+
+.coffee_product h4 {
+  text-align: center;
+  padding: 15px 0;
+}
+
+.coffee_items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0;
+  gap: 20px;
+}
+
+.coffee_img img {
+  height: 300px;
+  width: 250px;
+  object-fit: cover;
+}
+
+.coffee_img {
+  min-height: 100%;
+  background-color: var(--tertiary);
+  box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.056);
+}
+
+.coffee_img h5,
+p,
+.price {
+  padding: 5px 7px;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.purchase {
+  padding: 7px 25px;
+  background-color: var(--secondary);
+  outline: none;
+  border: none;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/***************ASIDE**********************/
+
+aside {
+  height: 20vh;
+  width: 100%;
+  color: white;
+}
+
+.aside_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.asideBtn {
+  padding: 17px 30px;
+  background-color: var(--secondary);
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 130%;
+  margin: 10px 0;
+}
+
+/*****************ARTICLE*************************/
+
+article {
+  height: 85vh;
+  width: 100%;
+}
+
+.article_content {
+  width: 90%;
+  height: 100%;
+  margin: 5% 6%;
+  background-color: var(--primary);
+}
+
+.article_intent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.box {
+  margin: 50px 0;
+  padding: 50px 70px;
+  background-color: var(--tertiary);
+  box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.056);
+  transition: 0.5s;
+}
+
+.profile {
+  display: flex;
+  gap: 20px;
+  padding: 12px 0;
+}
+
+.profile img {
+  height: 60px;
+  width: 60px;
+  border-radius: 32px;
+  background-color: var(--secondary);
+}
+
+.list ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.list ul li {
+  list-style: none;
+  height: 15px;
+  width: 15px;
+  border-radius: 7.5px;
+  background-color: white;
+  cursor: pointer;
+  transition: 0.5;
+}
+
+.list ul li:hover {
+  background-color: var(--secondary);
+}
+
+/***************FOOTER*********************/
+
+footer {
+  height: 30vh;
+  width: 100%;
+}
+
+.footer {
+  width: 90%;
+  height: 100%;
+  margin: 0 6%;
+  background-color: var(--primary);
+}
+
+.community {
+  background-color: var(--tertiary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.community h4,
+p {
+  padding: 12px 0;
+}
+
+.subscribe {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 12px 0;
+}
+
+.subscribe .subscribe_input {
+  padding: 8% 17%;
+  border-radius: 50px;
+  background: white;
+  border: none;
+  outline: none;
+  font-size: 130%;
+  font-weight: bold;
+}
+
+.subscribe .subscribeBtn {
+  background-color: var(--secondary);
+  color: white;
+  padding: 6% 9%;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  font-size: 13px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.subscribe .subscribeBtn:hover {
+  background-color: var(--primary);
+  color: var(--secondary);
+  font-weight: bold;
+}
+
+.contact {
+  background-color: var(--secondary);
+  display: flex;
+  gap: 30px;
+  padding: 6% 15%;
+  height: 50%;
+  color: WHITE;
+  font-size: 105%;
+}
+
+.contact_list {
+  display: flex;
+  padding: 0 25px;
+  justify-content: space-between;
+  gap: 10rem;
+}
+
+.contact_list ul {
+  padding: 12px 0;
+}
+
+.contact_list ul li {
+  list-style: none;
+  line-height: 30px;
+}
